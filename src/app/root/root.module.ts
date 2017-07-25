@@ -1,5 +1,5 @@
 /**
- * NgSkeleton
+ * NgUniversalSkeleton
  *
  * WARNING: The source code in this file is protected by copyright laws,
  * unauthorized use, duplication or redistribution may result in civil
