@@ -1,0 +1,19 @@
+<nav id="main-menu" role="navigation" class="navbar navbar-toggleable-sm navbar-inverse bg-inverse">
+  <button type="button"
+          class="navbar-toggler"
+          aria-label="Toggle navigation menu"
+          aria-expanded="!!navActive"
+          (click)="toggleNav()">
+    &#9776;
+  </button>
+
+  <a routerLink="/" class="navbar-brand" [title]="title" [innerText]="title"></a>
+
+  <div class="collapse navbar-collapse" [class.active]="navActive">
+    <ul class="navbar-nav mr-auto mt-2 mt-sm-0" (click)="toggleNav(true)">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/" routerLinkActive="active">Home</a>
+      </li>
+    </ul>
+  </div>
+</nav>

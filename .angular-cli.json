@@ -1,0 +1,56 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "project": {
+    "name": "ng-skeleton"
+  },
+  "apps": [
+    {
+      "root": "src",
+      "outDir": "dist",
+      "assets": [
+        "assets"
+      ],
+      "tsconfig": "app/tsconfig.app.json",
+      "testTsconfig": "app/tsconfig.spec.json",
+      "index": "index.html",
+      "main": "app/main.ts",
+      "polyfills": "app/polyfills.ts",
+      "test": "app/test.ts",
+      "prefix": "app",
+      "styles": [
+        "scss/main.scss"
+      ],
+      "scripts": [],
+      "environmentSource": "app/environments/environment.ts",
+      "environments": {
+        "dev": "app/environments/environment.ts",
+        "prod": "app/environments/environment.prod.ts"
+      }
+    }
+  ],
+  "e2e": {
+    "protractor": {
+      "config": "./protractor.conf.js"
+    }
+  },
+  "lint": [
+    {
+      "project": "./src/app/tsconfig.app.json"
+    },
+    {
+      "project": "./src/app/tsconfig.spec.json"
+    },
+    {
+      "project": "./e2e/tsconfig.e2e.json"
+    }
+  ],
+  "test": {
+    "karma": {
+      "config": "./karma.conf.js"
+    }
+  },
+  "defaults": {
+    "styleExt": "scss",
+    "component": {}
+  }
+}

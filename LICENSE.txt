@@ -1,0 +1,7 @@
+Copyright (c) 2017, Yassel Avila Gil (http://yasselavila.com).
+All rights reserved.
+
+This package is protected by copyright laws, unauthorized use, duplication or
+redistribution may result in civil liability and criminal prosecution.
+
+DO NOT USE IT WITHOUT PERMISSION!

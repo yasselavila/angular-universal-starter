@@ -1,0 +1,33 @@
+/**
+ * NgSkeleton
+ *
+ * WARNING: The source code in this file is protected by copyright laws,
+ * unauthorized use, duplication or redistribution may result in civil
+ * liability and criminal prosecution.
+ *
+ * @copyright Copyright (c) 2017, Yassel Avila Gil (http://yasselavila.com)
+ * @author    Yassel Avila Gil (yassel.avila@gmail.com)
+ */
+
+/* Options */
+
+$enable-flex: true !default;
+$enable-rounded: true !default;
+$enable-shadows: true !default;
+$enable-gradients: false !default;
+$enable-transitions: true !default;
+$enable-hover-media-query: true !default;
+$enable-grid-classes: true !default;
+$enable-print-styles: true !default;
+
+/* Font */
+
+$font-size-root: 16px !default;
+
+/* Colors */
+
+$brand-inverse: #111 !default;
+
+/* Navbar */
+
+$navbar-toggler-font-size: 1.375rem !default;
