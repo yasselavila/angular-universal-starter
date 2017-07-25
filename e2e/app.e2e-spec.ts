@@ -18,7 +18,7 @@ describe('NgSkeleton App', () => {
     page = new AppPage();
   });
 
-  const expectedTitle: string = 'NgSkeleton';
+  const expectedTitle: string = 'NgUniversalSkeleton';
 
   it(`should display message saying '${expectedTitle}'`, () => {
     page.navigateTo();
