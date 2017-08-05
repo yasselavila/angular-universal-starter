@@ -9,7 +9,7 @@
  * @author    Yassel Avila Gil (yassel.avila@gmail.com)
  */
 
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostBinding } from '@angular/core';
 
 @Component({
   selector: 'app-not-found-page',
@@ -17,6 +17,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./not-found.component.scss']
 })
 export class NotFoundComponent implements OnInit {
+  @HostBinding('class')
+  public className: string = 'not-found-page';
+
   public constructor() {
   }
 
