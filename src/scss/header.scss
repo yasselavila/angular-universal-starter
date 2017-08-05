@@ -35,6 +35,13 @@ header {
         margin: -1.875rem auto 0 auto;
         padding: 0;
       }
+
+      .navbar-toggler {
+        &:active,
+        &:focus {
+          outline: none;
+        }
+      }
     }
   }
 }

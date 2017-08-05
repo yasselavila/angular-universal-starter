@@ -9,7 +9,7 @@
  * @author    Yassel Avila Gil (yassel.avila@gmail.com)
  */
 
-import { Component, OnInit, Input, HostListener } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-nav-bar',
@@ -18,9 +18,12 @@ import { Component, OnInit, Input, HostListener } from '@angular/core';
 })
 export class NavBarComponent implements OnInit {
   @Input('title')
-  public title: string = 'NgUniversalSkeleton';
+  public title: string = 'NgSkeleton';
 
-  public navActive: boolean = false;
+  @Output()
+  public navToggled: EventEmitter<boolean> = new EventEmitter();
+
+  public navOpen: boolean = false;
 
   public constructor() {
   }
@@ -34,7 +37,8 @@ export class NavBarComponent implements OnInit {
     this.toggleNav(true);
   }
 
-  public toggleNav(hide?: boolean): void {
-    this.navActive = hide ? false : !this.navActive;
+  public toggleNav(close?: boolean): void {
+    this.navOpen = close ? false : !this.navOpen;
+    this.navToggled.emit(this.navOpen);
   }
 }
