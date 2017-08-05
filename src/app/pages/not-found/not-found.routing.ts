@@ -9,14 +9,16 @@
  * @author    Yassel Avila Gil (yassel.avila@gmail.com)
  */
 
-import { Routes } from '@angular/router';
+import { ModuleWithProviders } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
 
-import { HomeComponent } from './home.component';
+import { NotFoundComponent } from './not-found.component';
 
-export const homeRoutes: Routes = [
+export const NOT_FOUND_ROUTES: Routes = [
   {
-    path: '',
-    component: HomeComponent,
-    pathMatch: 'full'
+    path: '**',
+    component: NotFoundComponent
   }
 ];
+
+export const NotFoundRoutingModule: ModuleWithProviders = RouterModule.forChild(NOT_FOUND_ROUTES);

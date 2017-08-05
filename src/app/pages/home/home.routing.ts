@@ -9,19 +9,17 @@
  * @author    Yassel Avila Gil (yassel.avila@gmail.com)
  */
 
-import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { ModuleWithProviders } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
 
-import { HomeRoutingModule } from './home.routing';
 import { HomeComponent } from './home.component';
 
-@NgModule({
-  imports: [
-    HomeRoutingModule
-  ],
-  declarations: [
-    HomeComponent
-  ]
-})
-export class HomeModule {
-}
+export const HOME_ROUTES: Routes = [
+  {
+    path: '',
+    component: HomeComponent,
+    pathMatch: 'full'
+  }
+];
+
+export const HomeRoutingModule: ModuleWithProviders = RouterModule.forChild(HOME_ROUTES);

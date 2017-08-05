@@ -9,13 +9,15 @@
  * @author    Yassel Avila Gil (yassel.avila@gmail.com)
  */
 
-import { Routes } from '@angular/router';
+import { ModuleWithProviders } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
 
-import { NotFoundComponent } from './not-found.component';
-
-export const notFoundRoutes: Routes = [
-  {
-    path: '**',
-    component: NotFoundComponent
-  }
+export const ROOT_ROUTES: Routes = [
+  /* DEFINE ROUTES HERE ...
+   *
+   * IMPORTANT:
+   * Use this approach only if you want to use lazy-loaded pages
+   */
 ];
+
+export const RootRoutingModule: ModuleWithProviders = RouterModule.forRoot(ROOT_ROUTES);

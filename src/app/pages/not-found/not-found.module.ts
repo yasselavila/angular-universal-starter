@@ -13,13 +13,13 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 import { SharedModule } from '../../shared';
-import { notFoundRoutes } from './not-found.routes';
+import { NotFoundRoutingModule } from './not-found.routing';
 import { NotFoundComponent } from './not-found.component';
 
 @NgModule({
   imports: [
-    RouterModule.forChild(notFoundRoutes),
-    SharedModule
+    SharedModule,
+    NotFoundRoutingModule
   ],
   declarations: [
     NotFoundComponent

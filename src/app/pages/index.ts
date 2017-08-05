@@ -9,16 +9,17 @@
  * @author    Yassel Avila Gil (yassel.avila@gmail.com)
  */
 
-import { NgModule } from '@angular/core';
+import { NgModule, Type } from '@angular/core';
 
 import { HomeModule } from './home';
 import { NotFoundModule } from './not-found';
 
-@NgModule({
-  imports: [
-    HomeModule,
-    NotFoundModule
-  ]
-})
-export class PagesModule {
-}
+export {
+  HomeModule,
+  NotFoundModule
+};
+
+export const PAGES: Type<NgModule>[] = [
+  HomeModule,
+  NotFoundModule
+];
