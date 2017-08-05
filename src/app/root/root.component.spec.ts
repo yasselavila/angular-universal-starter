@@ -16,7 +16,7 @@ import { CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA } from '@angular/core';
 
 import { RootComponent } from './root.component';
 
-describe('App: NgSkeleton', () => {
+describe('App: NgUniversalSkeleton', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       declarations: [
@@ -27,7 +27,7 @@ describe('App: NgSkeleton', () => {
     });
   });
 
-  const expectedTitle: string = 'NgSkeleton';
+  const expectedTitle: string = 'NgUniversalSkeleton';
 
   it('should create the app', async(() => {
     const fixture: ComponentFixture<RootComponent> = TestBed.createComponent(RootComponent);

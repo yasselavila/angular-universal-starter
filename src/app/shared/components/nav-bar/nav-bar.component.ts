@@ -18,7 +18,7 @@ import { Component, OnInit, Input, HostListener } from '@angular/core';
 })
 export class NavBarComponent implements OnInit {
   @Input('title')
-  public title: string = 'NgSkeleton';
+  public title: string = 'NgUniversalSkeleton';
 
   public navActive: boolean = false;
 

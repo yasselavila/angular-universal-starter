@@ -11,7 +11,7 @@
 
 import { AppPage } from './app.po';
 
-describe('NgSkeleton App', () => {
+describe('NgUniversalSkeleton App', () => {
   let page: AppPage;
 
   beforeEach(() => {
