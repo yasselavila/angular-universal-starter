@@ -28,7 +28,7 @@
     "test": "ng test --code-coverage true",
     "lint": "ng lint",
     "e2e": "ng e2e --webdriver-update false",
-    "dist:serve": "http-server dist -s -o -p 8181",
+    "dist:serve": "http-server dist/client -s -o -p 8181",
     "universal:serve": "node dist/server/server.js",
     "universal": "run-s build:client build:server universal:serve"
   },
