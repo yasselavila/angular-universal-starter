@@ -20,7 +20,7 @@ import { RootComponent } from './root.component';
 
 @NgModule({
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'app-ssr' }),
     ReactiveFormsModule,
     SharedModule,
     RootRoutingModule,

@@ -26,6 +26,19 @@
         "dev": "app/environments/environment.ts",
         "prod": "app/environments/environment.prod.ts"
       }
+    },
+    {
+      "name": "server",
+      "platform": "server",
+      "tsconfig": "app/tsconfig.server.json",
+      "root": "src",
+      "outDir": "dist/server",
+      "main": "app/server/main.server.ts",
+      "environmentSource": "app/environments/environment.ts",
+      "environments": {
+        "dev": "app/environments/environment.ts",
+        "prod": "app/environments/environment.prod.ts"
+      }
     }
   ],
   "e2e": {
