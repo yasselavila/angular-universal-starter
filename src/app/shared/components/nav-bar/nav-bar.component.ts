@@ -18,7 +18,7 @@ import { Component, OnInit, Input, Output, EventEmitter, HostListener } from '@a
 })
 export class NavBarComponent implements OnInit {
   @Input('title')
-  public title: string = 'NgSkeleton';
+  public title: string = 'NgUniversalSkeleton';
 
   @Output()
   public navToggled: EventEmitter<boolean> = new EventEmitter();
