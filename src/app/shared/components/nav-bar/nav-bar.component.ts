@@ -34,7 +34,7 @@ export class NavBarComponent implements OnInit {
   }
 
   @HostListener('window:resize', ['$event'])
-  public onWindowResize(event?: Event): void {
+  public onWindowResize(event?: any): void {
     this.toggleNav(true);
   }
 
