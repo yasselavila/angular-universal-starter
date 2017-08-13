@@ -1,8 +1,8 @@
 <nav id="main-menu" role="navigation" class="navbar navbar-toggleable-sm navbar-inverse bg-inverse">
   <button type="button"
           class="navbar-toggler"
-          aria-label="Toggle navigation menu"
-          aria-expanded="!!navOpen"
+          [attr.aria-label]="'Toggle navigation menu'"
+          [attr.aria-expanded]="!!navOpen ? 'true' : 'false'"
           (click)="toggleNav()">
     &#9776;
   </button>
