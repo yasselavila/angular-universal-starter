@@ -12,6 +12,7 @@
 import { Component, OnInit, HostBinding } from '@angular/core';
 
 @Component({
+  moduleId: module.id,
   selector: 'app-not-found-page',
   templateUrl: './not-found.component.html',
   styleUrls: ['./not-found.component.scss']
