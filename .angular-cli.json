@@ -12,6 +12,7 @@
       ],
       "tsconfig": "app/tsconfig.app.json",
       "testTsconfig": "app/tsconfig.spec.json",
+      "deployUrl": "/",
       "index": "index.html",
       "main": "app/main.ts",
       "polyfills": "app/polyfills.ts",
