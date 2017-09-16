@@ -11,10 +11,10 @@
 
 /* You can add global styles to this file, and also import other style files */
 
-@import "./variables";
-
 /* Bootstrap */
-@import "~bootstrap/scss/_variables";
+/* - Custom configurations */
+@import "./variables";
+/* - Framework */
 @import "~bootstrap/scss/bootstrap";
 
 /* Custom */
