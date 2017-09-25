@@ -9,7 +9,7 @@
  * @author    Yassel Avila Gil (yassel.avila@gmail.com)
  */
 
-import { enableProdMode } from '@angular/core';
+import { enableProdMode, CompilerOptions } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
 import { RootModule } from './root';
@@ -19,6 +19,10 @@ if (environment.production) {
   enableProdMode();
 }
 
+const compilerOptions: CompilerOptions = {
+  preserveWhitespaces: false
+};
+
 platformBrowserDynamic()
-  .bootstrapModule(RootModule)
+  .bootstrapModule(RootModule, compilerOptions)
   .catch((err: Error) => console.error(err));
