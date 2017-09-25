@@ -51,7 +51,7 @@ import 'core-js/es7/reflect';
 /* IE10 and IE11 requires the following for NgClass support on SVG elements: */
 // import 'classlist.js';
 
-/* IE10, IE11 and all versions of Firefox requires the following to support `@angular/animations`: */
+/* IE10, IE11 and all versions of Firefox requires the following to support `@angular/platform-browser/animations`: */
 // import 'web-animations-js';
 
 /* Zone JS is required by Angular itself: */
