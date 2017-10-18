@@ -31,10 +31,10 @@
     {
       "name": "server",
       "platform": "server",
-      "tsconfig": "app/tsconfig.server.json",
+      "tsconfig": "app/tsconfig.ssr.json",
       "root": "src",
       "outDir": "dist/server",
-      "main": "app/server/main.server.ts",
+      "main": "app/server/ssr/main.ssr.ts",
       "environmentSource": "app/environments/environment.ts",
       "environments": {
         "dev": "app/environments/environment.ts",

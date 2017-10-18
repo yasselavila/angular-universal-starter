@@ -11,7 +11,7 @@
     ]
   },
   "files": [
-    "src/app/server/server.ts"
+    "src/app/server/express.ts"
   ],
   "exclude": [
     "*"

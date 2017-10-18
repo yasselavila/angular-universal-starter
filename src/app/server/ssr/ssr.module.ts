@@ -13,8 +13,8 @@ import { NgModule } from '@angular/core';
 import { ServerModule } from '@angular/platform-server';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 
-import { RootModule } from '../root/root.module';
-import { RootComponent } from '../root/root.component';
+import { RootModule } from '../../root/root.module';
+import { RootComponent } from '../../root/root.component';
 import { UniversalInterceptor } from './universal.interceptor';
 
 @NgModule({
@@ -29,5 +29,5 @@ import { UniversalInterceptor } from './universal.interceptor';
     RootComponent
   ]
 })
-export class AppServerModule {
+export class SsrModule {
 }
