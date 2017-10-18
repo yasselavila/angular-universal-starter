@@ -14,7 +14,7 @@ See [LICENSE.txt](./LICENSE.txt).
 
 ## IMPORTANT:
 
-This project was originally generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.5.
+This project was originally generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.7.
 
 ## Development server
 
