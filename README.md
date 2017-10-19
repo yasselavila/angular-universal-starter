@@ -1,4 +1,4 @@
-NgUniversalSkeleton
+NgxUniversalSeed
 =====
 
 Version 1.0.0-alpha.1, Copyright (c) 2017, [Yassel Avila Gil](http://yasselavila.com).
@@ -14,7 +14,7 @@ See [LICENSE.txt](./LICENSE.txt).
 
 ## IMPORTANT:
 
-This project was originally generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.7.
+This project was originally generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.8.
 
 ## Development server
 
