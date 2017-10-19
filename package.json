@@ -2,7 +2,7 @@
   "name": "ngx-universal-seed",
   "description": "Seed project for Angular v4+ based apps with universal (ssr) support",
   "version": "1.0.0-alpha.1",
-  "license": "SEE LICENSE IN LICENSE.txt",
+  "license": "BSD-3-Clause",
   "private": true,
   "homepage": "https://github.com/yasselavila/ng-universal-skeleton",
   "author": {
