@@ -18,7 +18,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./root.component.scss']
 })
 export class RootComponent {
-  public title: string = 'NgUniversalSkeleton';
+  public title: string = 'Angular Universal Starter';
 
   public constructor() {
   }
