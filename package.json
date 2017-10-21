@@ -1,17 +1,17 @@
 {
-  "name": "ngx-universal-seed",
-  "description": "Seed project for Angular v4+ based apps with universal (ssr) support",
+  "name": "angular-universal-starter",
+  "description": "Starter project for Angular v4+ based apps with universal (SSR) support",
   "version": "1.0.0-alpha.1",
   "license": "BSD-3-Clause",
   "private": true,
-  "homepage": "https://github.com/yasselavila/ng-universal-skeleton",
+  "homepage": "https://github.com/yasselavila/angular-universal-starter",
   "author": {
     "name": "Yassel Avila Gil",
     "url": "http://yasselavila.com/"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yasselavila/ngx-universal-seed.git"
+    "url": "https://github.com/yasselavila/angular-universal-starter.git"
   },
   "scripts": {
     "start": "npm run serve",
