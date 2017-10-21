@@ -10,24 +10,22 @@
  */
 
 /* Options */
-
-$enable-flex: true !default;
+/* - Quickly modify global styling by enabling or disabling optional features */
 $enable-rounded: true !default;
 $enable-shadows: true !default;
 $enable-gradients: false !default;
 $enable-transitions: true !default;
-$enable-hover-media-query: true !default;
+$enable-hover-media-query: false !default;
 $enable-grid-classes: true !default;
 $enable-print-styles: true !default;
 
-/* Font */
-
-$font-size-root: 16px !default;
-
-/* Colors */
-
-$brand-inverse: #111 !default;
+/* Fonts */
+/* - You can change the browser default value (typically `16px`) on ./base.scss */
+$font-size-base: 1rem !default;
 
 /* Navbar */
-
-$navbar-toggler-font-size: 1.375rem !default;
+/* - Toggler */
+$navbar-toggler-padding-y: 0 !default;
+$navbar-toggler-padding-x: 0 !default;
+$navbar-toggler-font-size: 1.6rem !default;
+$navbar-toggler-border-radius: 0 !default;
