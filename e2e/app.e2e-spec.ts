@@ -11,14 +11,14 @@
 
 import { AppPage } from './app.po';
 
-describe('NgUniversalSkeleton App', () => {
+describe('Angular Universal Starter App', () => {
   let page: AppPage;
 
   beforeEach(() => {
     page = new AppPage();
   });
 
-  const expectedTitle: string = 'NgUniversalSkeleton';
+  const expectedTitle: string = 'Angular Universal Starter';
 
   it(`should display message saying '${expectedTitle}'`, () => {
     page.navigateTo();
