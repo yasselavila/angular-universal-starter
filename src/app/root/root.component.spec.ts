@@ -1,12 +1,9 @@
 /**
- * NgUniversalSkeleton
- *
- * WARNING: The source code in this file is protected by copyright laws,
- * unauthorized use, duplication or redistribution may result in civil
- * liability and criminal prosecution.
+ * Angular Universal Starter
  *
  * @copyright Copyright (c) 2017, Yassel Avila Gil (http://yasselavila.com)
  * @author    Yassel Avila Gil (yassel.avila@gmail.com)
+ * @license   New BSD License (see LICENSE.txt)
  */
 
 /* tslint:disable:no-unused-variable */
@@ -16,7 +13,7 @@ import { CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA } from '@angular/core';
 
 import { RootComponent } from './root.component';
 
-describe('App: NgUniversalSkeleton', () => {
+describe('App: Angular Universal Starter', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       declarations: [
@@ -27,7 +24,7 @@ describe('App: NgUniversalSkeleton', () => {
     });
   });
 
-  const expectedTitle: string = 'NgUniversalSkeleton';
+  const expectedTitle: string = 'Angular Universal Starter';
 
   it('should create the app', async(() => {
     const fixture: ComponentFixture<RootComponent> = TestBed.createComponent(RootComponent);
