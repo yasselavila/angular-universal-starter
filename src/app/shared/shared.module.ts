@@ -12,9 +12,8 @@ import { RouterModule } from '@angular/router';
 
 import { components } from './components';
 
-/*
- * Do not specify providers for modules that might be imported by a lazy loaded module
- */
+/* Do not specify providers for modules that might be imported by a
+ * lazy loaded module */
 
 @NgModule({
   imports: [
