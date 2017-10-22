@@ -24,7 +24,6 @@ body {
 /* Grid */
 
 #header-container,
-#nav-container,
 #content-container,
 #footer-container {
   @include make-container();

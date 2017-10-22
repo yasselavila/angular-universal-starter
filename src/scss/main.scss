@@ -17,8 +17,10 @@
 /* Bootstrap */
 /* - Custom configurations */
 @import "./variables";
-/* - Framework */
+/* - Include the full framework ... */
 @import "~bootstrap/scss/bootstrap";
+/* - ... or just what you need */
+// @import "./bootstrap";
 
 /* Custom */
 @import "./generic";
