@@ -9,7 +9,7 @@
  * @author    Yassel Avila Gil (yassel.avila@gmail.com)
  */
 
-import { Component, OnInit, Input, Output, EventEmitter, HostListener } from '@angular/core';
+import { Component, Input, Output, EventEmitter, HostListener } from '@angular/core';
 
 @Component({
   moduleId: module.id,
@@ -17,31 +17,40 @@ import { Component, OnInit, Input, Output, EventEmitter, HostListener } from '@a
   templateUrl: './nav-bar.component.html',
   styleUrls: ['./nav-bar.component.scss']
 })
-export class NavBarComponent implements OnInit {
+export class NavBarComponent {
+  @Input('offCanvas')
+  public offCanvas: boolean = true;
+
+  @Input('logo')
+  public logo: string;
+
   @Input('title')
-  public title: string = 'NgUniversalSkeleton';
+  public title: string;
 
   @Output()
   public navToggled: EventEmitter<boolean> = new EventEmitter();
 
   public navOpen: boolean = false;
 
-  public constructor() {
-  }
-
-  public ngOnInit(): void {
-    // TODO
-  }
-
   @HostListener('window:resize', ['$event'])
   public onWindowResize(event?: any): void {
+    this.toggleNavIfOpen();
+  }
+
+  public toggleNav(close?: boolean): void {
+    this.navOpen = !!close ? false : !this.navOpen;
+    this.navToggled.emit(this.navOpen);
+  }
+
+  public toggleNavIfOpen(): void {
     if (this.navOpen) {
       this.toggleNav(true);
     }
   }
 
-  public toggleNav(close?: boolean): void {
-    this.navOpen = close ? false : !this.navOpen;
-    this.navToggled.emit(this.navOpen);
+  public stopPropagation(event?: any): void {
+    if (event && !!event.stopPropagation) {
+      event.stopPropagation();
+    }
   }
 }

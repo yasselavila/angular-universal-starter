@@ -1,19 +1,43 @@
-<nav id="main-menu" role="navigation" class="navbar navbar-toggleable-sm navbar-inverse bg-inverse">
-  <button type="button"
-          class="navbar-toggler"
-          [attr.aria-label]="'Toggle navigation menu'"
-          [attr.aria-expanded]="!!navOpen ? 'true' : 'false'"
-          (click)="toggleNav()">
-    &#9776;
-  </button>
+<nav id="main-menu" role="navigation" class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
+  <div class="container">
+    <button type="button"
+            class="navbar-toggler"
+            [attr.data-toggle]="'collapse'"
+            [attr.aria-label]="'Toggle navigation menu'"
+            [attr.aria-expanded]="!!navOpen ? 'true' : 'false'"
+            (click)="toggleNav()">
+      &#9776;
+    </button>
 
-  <a routerLink="/" class="navbar-brand" [title]="title" [innerText]="title"></a>
+    <a class="navbar-brand" routerLink="/" [title]="title">
+      <img *ngIf="logo" [src]="logo" [alt]="title || ''">
+      <h1 *ngIf="title" [innerText]="title"></h1>
+    </a>
 
-  <div class="collapse navbar-collapse" [class.active]="navOpen">
-    <ul class="navbar-nav mr-auto mt-2 mt-sm-0" (click)="toggleNav(true)">
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
-      </li>
-    </ul>
+    <div class="collapse navbar-collapse"
+         [ngClass]="{ 'off-canvas': !!offCanvas, 'active': navOpen }"
+         (click)="toggleNavIfOpen()">
+
+      <div class="collapse-content bg-dark" (click)="stopPropagation($event)">
+        <div *ngIf="offCanvas" class="header">
+          <img *ngIf="logo" [src]="logo" [alt]="title || ''">
+          <h1 *ngIf="title" [innerText]="title"></h1>
+        </div>
+        <ul class="navbar-nav" (click)="toggleNavIfOpen()">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+              Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/" routerLinkActive="active">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" routerLink="/" routerLinkActive="active">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </nav>
