@@ -6,7 +6,7 @@
  * @license   New BSD License (see LICENSE.txt)
  */
 
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostBinding } from '@angular/core';
 
 @Component({
   moduleId: module.id,
@@ -15,6 +15,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  @HostBinding('class')
+  public className: string = 'home-page';
+
   public constructor() {
   }
 
