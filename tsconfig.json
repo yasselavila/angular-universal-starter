@@ -15,6 +15,9 @@
       "./node_modules/@types"
     ]
   },
+  "angularCompilerOptions": {
+    "preserveWhitespaces": false
+  },
   "compileOnSave": false,
   "buildOnSave": false,
   "atom": {
