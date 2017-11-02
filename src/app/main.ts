@@ -16,10 +16,12 @@ if (environment.production) {
   enableProdMode();
 }
 
-const compilerOptions: CompilerOptions = {
-  preserveWhitespaces: false
+const bootstrapOptions: CompilerOptions|any = {
+  preserveWhitespaces: false,
+  /* NgZone | 'zone.js' | 'noop' */
+  // XXX: ngZone: 'noop', /**/:)
 };
 
 platformBrowserDynamic()
-  .bootstrapModule(RootModule, compilerOptions)
+  .bootstrapModule(RootModule, bootstrapOptions)
   .catch((err: Error) => console.error(err));
