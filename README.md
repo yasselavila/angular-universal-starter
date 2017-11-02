@@ -6,7 +6,7 @@ Author: [Yassel Avila Gil](mailto:yassel.avila@gmail.com).
 
 ## What is this?
 
-Starter project for [Angular](http://angular.io/) v4+ based apps with universal (SSR)
+Starter project for [Angular](http://angular.io/) v5+ based apps with universal (SSR)
 support.
 
 ## License
@@ -16,7 +16,7 @@ New BSD License. See [LICENSE.txt](./LICENSE.txt).
 ## IMPORTANT
 
 This project was originally generated and it is configured to work with the
-[Angular CLI](https://github.com/angular/angular-cli) version 1.4.9.
+[Angular CLI](https://github.com/angular/angular-cli) version 1.5.0.
 
 #### Development server
 
@@ -45,5 +45,5 @@ serving the app via `ng serve`.
 
 #### Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the 
+To get more help on the Angular CLI use `ng help` or go check out the
 [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
